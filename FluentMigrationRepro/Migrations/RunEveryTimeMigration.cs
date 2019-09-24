@@ -3,8 +3,7 @@
 namespace FluentMigrationRepro.Migrations
 {
     using FluentMigrator;
-    [Maintenance(MigrationStage.AfterAll, TransactionBehavior.None)]
-    [Tags("FluentMigratorIssue1016Workaround")]
+    [Maintenance(MigrationStage.AfterAll)]
     public class RunEveryTimeMigration : ForwardOnlyMigration
     {
         public override void Up()
